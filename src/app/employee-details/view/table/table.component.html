@@ -1,0 +1,17 @@
+<div>
+  <table style="border:2px solid" >
+  
+   <tr style="border:2px solid" >
+     <th  *ngFor = "let header of headers">   {{header}} </th> 
+   </tr> 
+   <tr style = "border:2px solid"  *ngFor = "let row of data">
+     <td  *ngFor = "let key of tableKeys">{{row[key]}}</td>
+    </tr>
+  
+    <!-- <button routerLink ="/employee-details/edit/{{emp.id}}">EDIT</button>
+ <button (click)="deleteEmp(emp.id)">DELETE</button> -->
+
+ </table> 
+ </div>
+ 
+ 

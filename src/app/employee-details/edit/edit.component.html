@@ -1,0 +1,47 @@
+<h2>Employee-Details</h2>
+
+<form [formGroup] ='empForm' (ngSubmit)="updateEmp(empForm.value)" novalidate>
+  <div>
+    <div>FIRST-NAME
+     <input type="text" placeholder="enter yr name" formControlName="firstName">
+     <div *ngIf="firstName.invalid && (firstName.dirty || firstName.touched)">
+      <div *ngIf="firstName.errors.required">
+          FIRST Name is required.
+        </div>
+     </div>
+    </div><br>
+    <div>LAST-NAME
+      <input type="text" placeholder="enter yr surname" formControlName="lastName">
+      <div *ngIf="lastName.invalid && (lastName.dirty || lastName.touched)">
+          <div *ngIf="lastName.errors.required">
+              Last Name is required.
+            </div>
+         </div>
+    </div><br>
+    <div>DESIGNATION
+      <input type="text" placeholder="enter yr position" formControlName="designation">
+      <div *ngIf="designation.invalid && (designation.dirty || designation.touched)">
+          <div *ngIf="designation.errors.required">
+              position is required.
+            </div>
+         </div>
+    </div><br>
+    <div>ADDRESS
+      <input type="text" placeholder="enter yr address" formControlName="address">
+      <div *ngIf="address.invalid && (address.dirty || address.touched)">
+          <div *ngIf="address.errors.required">
+              address is required.
+            </div>
+         </div>
+    </div><br>
+    <div>CONTACT-NO
+      <input type="text" placeholder="enter yr contact no" formControlName="phoneNo">
+      <div *ngIf="phoneNo.invalid && (phoneNo.dirty || phoneNo.touched)">
+          <div *ngIf="phoneNo.errors.required">
+              contact is required.
+            </div>
+         </div>
+    </div><br>
+    <button>UPDATE</button>
+  </div>
+</form>

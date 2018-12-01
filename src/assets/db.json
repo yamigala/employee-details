@@ -1,0 +1,68 @@
+{
+  "employee": [
+    {
+      "id": 1,
+      "firstName": "yamini",
+      "lastName": "gala",
+      "designation": "developer",
+      "address": "valsad",
+      "phoneNo": "6546654"
+    },
+    {
+      "id": 2,
+      "firstName": "tina",
+      "lastName": "gala",
+      "designation": "hr",
+      "address": "mumbai",
+      "phoneNo": "5743675"
+    },
+    {
+      "id": 3,
+      "firstName": "axita",
+      "lastName": "shah",
+      "designation": "manager",
+      "address": "pune",
+      "phoneNo": "573"
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "designation": "",
+      "address": "fdh",
+      "phoneNo": "fdghg",
+      "id": 13
+    },
+    {
+      "firstName": "",
+      "lastName": "ghfj",
+      "designation": "hgfkj",
+      "address": "",
+      "phoneNo": "",
+      "id": 14
+    },
+    {
+      "firstName": "dfgth",
+      "lastName": "",
+      "designation": "",
+      "address": "",
+      "phoneNo": "",
+      "id": 16
+    },
+    {
+      "firstName": "fgdh",
+      "lastName": "fgvh",
+      "designation": "fcvdhb",
+      "address": "h",
+      "phoneNo": "fv",
+      "id": 17
+    },
+    {
+      "firstName": "fgdh",
+      "lastName": "cvh",
+      "designation": "",
+      "address": "",
+      "phoneNo": "",
+      "id": 18
+    }
+  ]
+}
