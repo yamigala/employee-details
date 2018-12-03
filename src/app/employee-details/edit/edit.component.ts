@@ -115,6 +115,6 @@ export class EditComponent implements OnInit {
       this.employee = emp;
     });
 
-    this.route.navigate(["/view"]);
+    this.route.navigate(["/employee-details/view"]);
   }
 }

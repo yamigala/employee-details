@@ -8,17 +8,18 @@ import { AddComponent } from "./add/add.component";
 import { ViewComponent } from "./view/view.component";
 import { EditComponent } from "./edit/edit.component";
 import { EmployeeService } from "./employee.service";
-import { TableComponent } from "./view/table/table.component";
+import {TableModule} from "yamini-package";
 
 @NgModule({
   imports: [
     CommonModule,
     EmployeeDetailsRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    TableModule
   ],
-  declarations: [AddComponent, ViewComponent, EditComponent, TableComponent],
-  exports: [AddComponent, ViewComponent, EditComponent, TableComponent],
+  declarations: [AddComponent, ViewComponent, EditComponent ],
+  exports: [AddComponent, ViewComponent, EditComponent],
   providers: [EmployeeService]
 })
 export class EmployeeDetailsModule {}

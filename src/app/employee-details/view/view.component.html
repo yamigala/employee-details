@@ -22,4 +22,4 @@
 </table> 
 </div> -->
 
-<app-table [headers]="headers" [data]="employee"></app-table>
+<yamini-table [headers]="headers" [data]="employee" (deleteClicked)="onDelete($event)" (editClicked)="onEdit($event)"></yamini-table>

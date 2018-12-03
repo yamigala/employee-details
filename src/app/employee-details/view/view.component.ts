@@ -1,7 +1,8 @@
-import { Component, OnInit, AfterViewInit } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 //-----------------------------------------------------//
 import { Employee } from "../employee.model";
 import { EmployeeService } from "../employee.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-view",
@@ -12,7 +13,8 @@ export class ViewComponent implements OnInit {
   public employee: Employee[];
   public emp: Employee[];
   headers: any[];
-  constructor(private service: EmployeeService) {}
+  constructor(private service: EmployeeService,
+    private route : Router) {}
 
   ngOnInit() {
     this.headers = [
@@ -42,5 +44,14 @@ export class ViewComponent implements OnInit {
   public deleteEmp(id: number): void {
     this.service.deleteEmp(id).subscribe();
     this.getEmp();
+  }
+
+  public onDelete(id: number) {
+    this.service.deleteEmp(id).subscribe(() => {
+      this.getEmp();
+    });
+  }
+  public onEdit(id: number) {
+    this.route.navigate(['/employee-details/edit' + '/' + id]);
   }
 }
