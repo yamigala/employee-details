@@ -1,25 +1,2 @@
-<!-- <div>
- <table style="border:2px solid" >
- 
-  <tr style="border:2px solid">
-    <th style="border:2px solid">id</th>
-    <th style="border:2px solid">firstName</th>
-    <th style="border:2px solid">lastName</th>
-    <th style="border:2px solid">designation</th>
-    <th style="border:2px solid">address</th>
-    <th style="border:2px solid">phoneNo</th>
-  </tr>
-  <tr *ngFor = "let emp of employee">
-   <td>{{emp.id}}</td>
-   <td>{{emp.firstName}}</td>
-   <td>{{emp.lastName}}</td>
-   <td>{{emp.designation}}</td>
-   <td>{{emp.address}}</td>
-   <td>{{emp.phoneNo}}</td>
-   <button routerLink ="/employee-details/edit/{{emp.id}}">EDIT</button>
-<button (click)="deleteEmp(emp.id)">DELETE</button>
-</tr>
-</table> 
-</div> -->
 
 <yamini-table [headers]="headers" [data]="employee" (deleteClicked)="onDelete($event)" (editClicked)="onEdit($event)"></yamini-table>

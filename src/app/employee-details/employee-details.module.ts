@@ -1,3 +1,6 @@
+/**
+ * @author: Yamini Gala
+ */
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { ReactiveFormsModule } from "@angular/forms";
@@ -8,7 +11,7 @@ import { AddComponent } from "./add/add.component";
 import { ViewComponent } from "./view/view.component";
 import { EditComponent } from "./edit/edit.component";
 import { EmployeeService } from "./employee.service";
-import {TableModule} from "yamini-package";
+import { TableModule } from "yamini-package";
 
 @NgModule({
   imports: [
@@ -18,7 +21,7 @@ import {TableModule} from "yamini-package";
     HttpClientModule,
     TableModule
   ],
-  declarations: [AddComponent, ViewComponent, EditComponent ],
+  declarations: [AddComponent, ViewComponent, EditComponent],
   exports: [AddComponent, ViewComponent, EditComponent],
   providers: [EmployeeService]
 })

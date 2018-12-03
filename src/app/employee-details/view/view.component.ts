@@ -1,8 +1,11 @@
+/**
+ * @author: Yamini Gala
+ */
 import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 //-----------------------------------------------------//
 import { Employee } from "../employee.model";
 import { EmployeeService } from "../employee.service";
-import { Router } from "@angular/router";
 
 @Component({
   selector: "app-view",
@@ -13,8 +16,7 @@ export class ViewComponent implements OnInit {
   public employee: Employee[];
   public emp: Employee[];
   headers: any[];
-  constructor(private service: EmployeeService,
-    private route : Router) {}
+  constructor(private service: EmployeeService, private route: Router) {}
 
   ngOnInit() {
     this.headers = [
@@ -52,6 +54,6 @@ export class ViewComponent implements OnInit {
     });
   }
   public onEdit(id: number) {
-    this.route.navigate(['/employee-details/edit' + '/' + id]);
+    this.route.navigate(["/employee-details/edit" + "/" + id]);
   }
 }
